@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/styles.css">
+    <title>Menu Desplegable de Idioma</title>
+</head>
+
+<body style="background-image: url('assets/RSP_FONDOA.png');">
+    <header class="header">
+        <img src="assets/PMI_LOGO.png" alt="Logo" class="logo">
+    </header>
+    <div class="content">
+        <div id="language-card" class="card">
+            <h1 class="title">Responsible Sourcing Principles Fundamentals</h1>
+            <select id="language-select">
+                <option value=""> -- Select your preferred language -- </option>
+                <option value="es">Español / Spanish</option>
+                <option value="en">English / English</option>
+                <option value="fr">Français / French</option>
+            </select>
+        </div>
+        <iframe id="scorm-frame" style="display: none; width: 100vw; height: 100vh;"></iframe>
+        <button id="back-button" style="display: none;">Regresar</button>
+    </div>
+    <script src="static/app.js"></script>
+</body>
+
+</html>
