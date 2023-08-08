@@ -1,100 +1,102 @@
 body {
+    font-family: 'Lato',Arial, sans-serif;
+    background-image: url('../assets/world.jpg');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 100vh;
     margin: 0;
-    background-color: #f5f5f5;
-    background-size: cover;
+    color: white;
 }
 
-.content {
+.container {
+    position: relative;
+    width: 90%;
+    max-width: 800px;
+}
+
+.language-card {
+    background-color: #359dde;
+    padding: 2rem 7rem;
+    border-radius: 10px;
+    text-align: center;
+    opacity: 0.9;
+}
+
+.language-card h1 {
+    font-weight: bold;
+    margin: 0;
+}
+
+.language-card p {
+    margin-top: 10px;
+    font-size: 1.25rem;
+}
+
+.language-card hr {
+    border: none;
+    height: 2px;
+    background-color: #085ca0;
+    margin: 20px 0;
+}
+
+.language-list {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: calc(80vh - 80px); /* Asume que el header tiene 60px de altura */
+    justify-content: space-around;
+    padding: 0;
 }
 
-/* El resto de tu código CSS */
-
-.card {
+.column {
+    
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    margin: 0;
+    min-width: 50%;
+  
+}
+.column:last-child > li{
+    margin-left: 3.5rem;
+}
+
+
+.language-list li {
+    display: flex;
     align-items: center;
-    width: 350px;
-    height: 230px;
-    margin: auto;
-    padding: 40px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); /* Sombra más oscura y difusa */
-    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    padding-left: 25px; 
+    margin-bottom: 10px;
 }
 
-
-
-
-.title {
-    margin-bottom: 20px;
-    font-size: 2em; /* Tamaño de fuente más grande para resaltar el texto principal */
-    text-align: center;
-    color: #333;
-}
-
-#language-select {
-    width: 100%;
-    height: 40px;
-    padding: 5px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    background-color: #fafafa;
-    color: #333;
-    font-size: 1.1em;
-    text-align: center; /* Centra el texto de las opciones */
-    transition: background-color 0.3s ease;
-}
-
-#language-select:focus {
-    background-color: #f5f5f5;
-}
-
-#back-button {
+.check-icon {
+    position: absolute; 
+    left: 0;
     display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    padding: 10px 20px;
-    font-size: 1.2em;
-    background-color: #007BFF;
+    color: #0f65a8;
+}
+
+.start-button {
+    position: absolute;
+    bottom: -60px;
+    right: 0;
+    background-color: #085ca0;
     color: white;
     border: none;
-    border-radius: 5px;
+    padding: 8px 25px;
+    border-radius: 10px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    font-size: 1.2rem;
 }
 
-#back-button:hover {
-    background-color: #0056b3;
+.start-button[disabled] {
+    background-color: #ccc;
+    cursor: not-allowed;
 }
 
 
-.header {
-    background-color: white;
-    padding: 20px;
-    display: flex;
-    justify-content: center; /* Alinea los elementos hijos horizontalmente al centro */
-    align-items: center; /* Alinea los elementos hijos verticalmente al centro */
-}
+.selected {
 
-.logo {
-    width: 100px;
-    height: auto;
-}
-
-@media only screen and (max-width: 600px) {
-    .header {
-        padding: 10px;
-    }
-
-    .logo {
-        width: 50px;
-    }
+    font-weight: 700;
+    color: #085ca0;
 }

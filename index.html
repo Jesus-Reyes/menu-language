@@ -1,31 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="static/styles.css">
-    <title>Menu Desplegable de Idioma</title>
+    <title>Menu de Idiomas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./static/styles.css">
 </head>
-
-<body style="background-image: url('assets/RSP_FONDOA.png');">
-    <header class="header">
-        <img src="assets/PMI_LOGO.png" alt="Logo" class="logo">
-    </header>
-    <div class="content">
-        <div id="language-card" class="card">
-            <h1 class="title">Responsible Sourcing Principles Fundamentals</h1>
-            <select id="language-select">
-                <option value=""> -- Select your preferred language -- </option>
-                <option value="es">Español / Spanish</option>
-                <option value="en">English / English</option>
-                <option value="fr">Français / French</option>
-            </select>
+<body>
+    <div class="container">
+        <div class="language-card">
+            <h1>RSP FUNDAMENTALS TRAINING</h1>
+            <p>Select your preferred language</p>
+            <hr>
+            <ul class="language-list">
+                <div class="column" id="column1">
+                    <!-- Los idiomas de la primera columna se agregarán con JavaScript -->
+                </div>
+                <div class="column" id="column2">
+                    <!-- Los idiomas de la segunda columna se agregarán con JavaScript -->
+                </div>
+            </ul>
         </div>
-        <iframe id="scorm-frame" style="display: none; width: 100vw; height: 100vh;"></iframe>
-        <button id="back-button" style="display: none;">Regresar</button>
+        <button class="start-button" disabled>START</button>
     </div>
-    <script src="static/app.js"></script>
+    <script src="./static/app.js"></script>
 </body>
-
 </html>
