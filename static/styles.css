@@ -1,6 +1,6 @@
 body {
     font-family: 'Lato',Arial, sans-serif;
-    background-image: url('../assets/world.jpg');
+    background-image: url('../assets/background.png');
     background-size: cover;
     display: flex;
     align-items: center;
@@ -12,16 +12,15 @@ body {
 
 .container {
     position: relative;
-    width: 90%;
-    max-width: 800px;
+    width: 95%;
+    max-width: 1050px;
 }
 
 .language-card {
-    background-color: #359dde;
+    background-color: #1684dfc9;
     padding: 2rem 7rem;
     border-radius: 10px;
     text-align: center;
-    opacity: 0.9;
 }
 
 .language-card h1 {
@@ -30,6 +29,10 @@ body {
 }
 
 .language-card p {
+    margin-top: 10px;
+    font-size: 1.25rem;
+}
+.language-card span {
     margin-top: 10px;
     font-size: 1.25rem;
 }
@@ -73,7 +76,7 @@ body {
     position: absolute; 
     left: 0;
     display: none;
-    color: #0f65a8;
+    color: #005095;
 }
 
 .start-button {
