@@ -12,8 +12,8 @@ body {
 
 .container {
     position: relative;
-    width: 95%;
-    max-width: 1050px;
+    width: 90%;
+    max-width: 1000px;
 }
 
 .language-card {
@@ -28,13 +28,9 @@ body {
     margin: 0;
 }
 
-.language-card p {
+.language-card p , span , i{
     margin-top: 10px;
-    font-size: 1.25rem;
-}
-.language-card span {
-    margin-top: 10px;
-    font-size: 1.25rem;
+    font-size: 1.2rem;
 }
 
 .language-card hr {
