@@ -11,16 +11,35 @@
                               http://www.adlnet.org/xsd/adlseq_v1p3 adlseq_v1p3.xsd
                               http://www.adlnet.org/xsd/adlnav_v1p3 adlnav_v1p3.xsd
                               http://www.imsglobal.org/xsd/imsss imsss_v1p2.xsd">
+    <metadata>
+        <schema>ADL SCORM</schema>
+        <schemaversion>1.2</schemaversion> <!-- O la versión que estés usando -->
+    </metadata>
     <organizations default="org1">
         <organization identifier="org1" structure="hierarchical">
             <item identifier="item1" identifierref="res1">
-                <title>Mi aplicación Angular</title>
+                <title>RSP FUNDAMENTALS TRAINING</title>
             </item>
+            <metadata>
+				<schema>ADL SCORM</schema>
+				<schemaversion>1.2</schemaversion>
+				
+			</metadata>	
         </organization>
     </organizations>
+
+
     <resources>
         <resource identifier="res1" type="webcontent" adlcp:scormType="sco" href="index.html">
+            <metadata>
+				<schema>ADL SCORM</schema>
+				<schemaversion>1.2</schemaversion>
+				<adlcp:location>metadata.xml</adlcp:location> 
+			</metadata>	
             <file href="index.html" />
+            <file href="static/app.js" />
+            <file href="static/styles.css" />
         </resource>
     </resources>
+
 </manifest>
