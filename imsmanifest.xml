@@ -34,7 +34,6 @@
             <metadata>
 				<schema>ADL SCORM</schema>
 				<schemaversion>1.2</schemaversion>
-				<adlcp:location>metadata.xml</adlcp:location> 
 			</metadata>	
             <file href="index.html" />
             <file href="static/app.js" />
